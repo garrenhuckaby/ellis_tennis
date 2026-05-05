@@ -1,0 +1,438 @@
+/* Ellis Tennis - Custom Styles */
+
+:root {
+    --primary-color: #0d47a1;
+    --secondary-color: #1565c0;
+    --accent-color: #ff6f00;
+    --light-bg: #f5f5f5;
+    --text-dark: #212529;
+    --text-light: #6c757d;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* NAVIGATION */
+.navbar {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: white !important;
+}
+
+.navbar-brand i {
+    margin-right: 8px;
+}
+
+.nav-link {
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--accent-color) !important;
+}
+
+/* HERO SECTION */
+.hero-section {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(255,255,255,.05)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="rgba(13,71,161,.8)"/><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.hero-section h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+.hero-section .lead {
+    font-size: 1.3rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(13, 71, 161, 0.3);
+}
+
+.btn-outline-light:hover {
+    background-color: white;
+    color: var(--primary-color);
+    border-color: white;
+}
+
+/* ABOUT SECTION */
+#about {
+    padding: 80px 0;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 50px;
+}
+
+#about img {
+    transition: transform 0.3s ease;
+}
+
+#about img:hover {
+    transform: scale(1.02);
+}
+
+.feature-card {
+    padding: 30px 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+.feature-card h4 {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+/* SCHEDULE SECTION */
+#schedule {
+    padding: 80px 0;
+}
+
+#schedule h2,
+#pricing h2,
+#register h2,
+#payment h2,
+#contact h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.schedule-info {
+    border-left: 5px solid var(--accent-color);
+    transition: all 0.3s ease;
+}
+
+.schedule-info:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-info h4 {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.schedule-info li {
+    font-size: 1.05rem;
+}
+
+.calendar-container {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.calendar-container iframe {
+    border-radius: 8px;
+}
+
+/* PRICING SECTION */
+#pricing {
+    padding: 80px 0;
+}
+
+.price-display {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 20px 0;
+}
+
+.card {
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card.border-primary:hover {
+    box-shadow: 0 12px 30px rgba(13, 71, 161, 0.25);
+}
+
+.card h4 {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.badge {
+    transform: translate(0, -50%);
+}
+
+.accordion-button {
+    font-weight: 500;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #f0f0f0;
+    color: var(--primary-color);
+}
+
+.accordion-button:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(13, 71, 161, 0.25);
+}
+
+/* REGISTER SECTION */
+#register {
+    padding: 80px 0;
+}
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+/* PAYMENT SECTION */
+#payment {
+    padding: 80px 0;
+}
+
+#pay-single,
+#pay-monthly {
+    transition: all 0.3s ease;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+#pay-single:hover {
+    transform: scale(1.05);
+}
+
+#pay-monthly:hover {
+    transform: scale(1.05);
+}
+
+/* CONTACT SECTION */
+#contact {
+    padding: 80px 0;
+}
+
+.contact-card {
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card h4 {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.contact-card a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-card a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+.social-links a {
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+}
+
+#contactForm input,
+#contactForm textarea {
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(13, 71, 161, 0.25);
+}
+
+/* FOOTER */
+footer {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    margin-top: 60px;
+    border-top: 3px solid var(--accent-color);
+}
+
+footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* UTILITIES */
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+/* RESPONSIVE ADJUSTMENTS */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 400px;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section .lead {
+        font-size: 1rem;
+    }
+
+    #about,
+    #schedule,
+    #pricing,
+    #register,
+    #payment,
+    #contact {
+        padding: 50px 0;
+    }
+
+    #about h2,
+    #schedule h2,
+    #pricing h2,
+    #register h2,
+    #payment h2,
+    #contact h2 {
+        font-size: 2rem;
+    }
+
+    .feature-card {
+        margin-bottom: 20px;
+    }
+
+    .price-display {
+        font-size: 2.5rem;
+    }
+
+    .navbar-collapse {
+        padding-top: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-link {
+        padding: 10px 0 !important;
+    }
+
+    .d-flex.gap-3 {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100% !important;
+    }
+
+    .ps-md-4 {
+        padding-left: 0 !important;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section {
+        height: 350px;
+    }
+
+    .hero-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .price-display {
+        font-size: 2rem;
+    }
+
+    .schedule-info li {
+        font-size: 0.95rem;
+    }
+}
+
+/* ANIMATION - Fade in on scroll */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeInUp 0.6s ease-out;
+}
