@@ -200,3 +200,45 @@ footer p {
         font-size: 0.95rem;
     }
 }
+
+/* HORIZONTAL SCROLL SECTIONS */
+.lessons-scroll-container {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    height: 100vh;
+}
+
+.lessons-scroll-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.lessons-scroll-container::-webkit-scrollbar-track {
+    background: var(--bg-light);
+}
+
+.lessons-scroll-container::-webkit-scrollbar-thumb {
+    background: #267200;
+    border-radius: 4px;
+}
+
+.lessons-scroll-container::-webkit-scrollbar-thumb:hover {
+    background: #389100;
+}
+
+.lessons-section {
+    flex: 0 0 100vw;
+    scroll-snap-align: start;
+    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.lessons-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 40px;
+}
