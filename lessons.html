@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tennis lessons pricing and registration">
+    <title>Lessons — Ellis Tennis</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+    <div class="container-fluid px-4">
+        <a class="navbar-brand fw-bold text-dark" href="index.html">
+            <i class="bi bi-racquet"></i> Ellis Tennis
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link text-dark" href="lessons.html">Lessons</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="tournaments.html">Tournaments</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="camps.html">Camps</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="about.html">About Us</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<section class="bg-light py-5 text-center border-bottom">
+    <div class="container">
+        <h1 class="display-4 fw-bold mb-2">Lessons</h1>
+    </div>
+</section>
+
+<!-- PRICING SECTION -->
+<section>
+    <div class="container">
+        <h3 class="text-center mb-5">Our Pricing</h3>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="mb-4 pb-4 border-bottom">
+                    <h4 class="fw-bold mb-3">Private Coaching</h4>
+                    <p class="fs-4 text-primary fw-bold mb-3">$60/hour</p>
+                    <p class="text-light">One-on-one instruction tailored to your child's skill level and goals.</p>
+                </div>
+                <div class="mb-4">
+                    <h4 class="fw-bold mb-3">Group Clinics</h4>
+                    <p class="fs-4 text-primary fw-bold mb-3">$30/hour</p>
+                    <p class="text-light">Small group lessons with peers, building skills and friendships together.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- LOCATION SECTION -->
+<section class="bg-light">
+    <div class="container">
+        <h3 class="text-center mb-4">Location</h3>
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="text-center">
+                    <p class="fs-5">
+                        <strong>Mount Logan Middle School</strong><br>
+                        875 N 200 E<br>
+                        Logan, UT 84321
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SCHEDULE / CALENDAR SECTION -->
+<section>
+    <div class="container">
+        <h3 class="text-center mb-5">Schedule</h3>
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="bg-light p-4 rounded text-center">
+                    <p class="text-muted mb-0">
+                        <i class="bi bi-calendar"></i>
+                        Check back soon for the class schedule and calendar
+                    </p>
+                </div>
+                <!--
+                    GOOGLE CALENDAR INTEGRATION:
+                    1. Go to https://calendar.google.com
+                    2. Create a new calendar named "Ellis Tennis Lessons"
+                    3. Make it public: Settings > Sharing > Make calendar public
+                    4. Get the embed code: Settings > Integrate calendar > Copy the iFrame code
+                    5. Replace the placeholder below with your embed code
+
+                    Example embed code:
+                    <iframe src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=America%2FDenver" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no" class="mt-4 rounded"></iframe>
+                -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- REGISTRATION / PAYMENT SECTION -->
+<section class="bg-light">
+    <div class="container">
+        <h3 class="text-center mb-5">Register for Lessons</h3>
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <p class="text-center text-light mb-4">
+                    Ready to get started? Click below to complete your registration and payment.
+                </p>
+                <!--
+                    STRIPE INTEGRATION:
+                    1. Create a Stripe account at https://stripe.com
+                    2. Create a Payment Link: Dashboard > Payment Links > Create
+                    3. Set amount to $30 (per lesson) or $120 (monthly package)
+                    4. Get your Payment Link URL
+                    5. Update the href below and in js/main.js with your Stripe Payment Link
+
+                    Example Payment Link: https://buy.stripe.com/test/[YOUR_LINK]
+                -->
+                <div class="text-center">
+                    <a href="#"
+                       id="stripe-register-btn"
+                       class="btn btn-primary btn-lg mb-3 w-100"
+                       onclick="if(!this.href.includes('buy.stripe.com')) { alert('Register button is not yet configured. Please add your Stripe Payment Link URL.'); return false; }">
+                        <i class="bi bi-credit-card"></i> Register & Pay
+                    </a>
+                    <p class="small text-muted">
+                        Payments are processed securely through Stripe
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-light text-dark py-5 text-center border-top">
+    <div class="container">
+        <p class="mb-2">
+            <strong>Mount Logan Middle School</strong><br>
+            875 N 200 E, Logan, UT 84321
+        </p>
+        <p class="mb-0">
+            <a href="mailto:ellistennisco@gmail.com" class="text-decoration-none text-dark">ellistennisco@gmail.com</a> ·
+            <a href="tel:+13853647157" class="text-decoration-none text-dark">(385) 364-7157</a>
+        </p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Custom JS -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
