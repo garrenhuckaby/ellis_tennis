@@ -31,7 +31,7 @@ body {
 
 .navbar-brand i {
     margin-right: 8px;
-    color: #0066cc;
+    color: #267200;
 }
 
 .nav-link {
@@ -42,7 +42,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #0066cc !important;
+    color: #267200 !important;
 }
 
 /* HERO SECTION */
@@ -66,12 +66,12 @@ body {
 
 .hero-italic {
     font-style: italic;
-    color: #0066cc;
+    color: #267200;
 }
 
 .hero-section .btn-primary {
-    background-color: #0066cc;
-    border-color: #0066cc;
+    background-color: #267200;
+    border-color: #267200;
     font-weight: 600;
     padding: 12px 40px;
     font-size: 1.1rem;
@@ -79,8 +79,8 @@ body {
 }
 
 .hero-section .btn-primary:hover {
-    background-color: #0052a3;
-    border-color: #0052a3;
+    background-color: #389100;
+    border-color: #efbf04;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 102, 204, 0.2);
 }
@@ -116,13 +116,13 @@ footer {
 }
 
 footer a {
-    color: #0066cc;
+    color: #267200;
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
 footer a:hover {
-    color: #0052a3;
+    color: #267200;
     text-decoration: underline;
 }
 
@@ -133,15 +133,15 @@ footer p {
 
 /* BUTTONS */
 .btn-primary {
-    background-color: #0066cc;
-    border-color: #0066cc;
+    background-color: #267200;
+    border-color: #267200;
     color: white;
     font-weight: 600;
 }
 
 .btn-primary:hover {
-    background-color: #0052a3;
-    border-color: #0052a3;
+    background-color: #389100;
+    border-color: #efbf04;
 }
 
 /* RESPONSIVE */
