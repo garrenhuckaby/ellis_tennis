@@ -60,13 +60,13 @@ body {
 
 /* HERO SECTION */
 .hero-section {
-    background: linear-gradient(135deg, #2a7d1a 0%, #ffffff 100%);
+    background: linear-gradient(135deg, #243522 0%, #ffffff 100%);
     padding: 40px 20px;
     min-height: 600px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 .hero-logo {
@@ -99,8 +99,8 @@ body {
 }
 
 .hero-section .btn-primary {
-    background-color: #2a7d1a;
-    border-color: #2a7d1a;
+    background-color: #243522;
+    border-color: #243522;
     font-weight: 600;
     padding: 12px 40px;
     font-size: 1.1rem;
