@@ -33,7 +33,7 @@ body {
 
 .navbar-brand i {
     margin-right: 8px;
-    color: #253523;
+    color: #2a7d1a;
 }
 
 .navbar-logo {
@@ -49,24 +49,24 @@ body {
 }
 
 .nav-link:hover {
-    color: #253523 !important;
+    color: #2a7d1a !important;
 }
 
 .nav-link.active {
-    color: #253523 !important;
-    border-bottom: 3px solid #253523;
+    color: #2a7d1a !important;
+    border-bottom: 3px solid #2a7d1a;
     padding-bottom: 8px !important;
 }
 
 /* HERO SECTION */
 .hero-section {
-    background: linear-gradient(135deg, #3a5028 0%, #ffffff 100%);
+    background: linear-gradient(135deg, #2a7d1a 0%, #ffffff 100%);
     padding: 40px 20px;
     min-height: 600px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    padding-top: 120px;
+    padding-top: 40px;
 }
 
 .hero-logo {
@@ -99,8 +99,8 @@ body {
 }
 
 .hero-section .btn-primary {
-    background-color: #1d5800;
-    border-color: #1d5800;
+    background-color: #2a7d1a;
+    border-color: #2a7d1a;
     font-weight: 600;
     padding: 12px 40px;
     font-size: 1.1rem;
@@ -108,17 +108,17 @@ body {
 }
 
 .btn-register {
-    background-color: #253523 !important;
-    border-color: #253523 !important;
+    background-color: #2a7d1a !important;
+    border-color: #2a7d1a !important;
     padding: 18px 50px !important;
     font-size: 1.3rem !important;
 }
 
 .btn-register:hover {
-    background-color: #25352370 !important;
-    border-color: #253523 !important;
+    background-color: #2a7d1a70 !important;
+    border-color: #2a7d1a !important;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(37, 53, 35, 0.2);
+    box-shadow: 0 4px 12px rgba(42, 125, 26, 0.2);
 }
 
 .hero-section .btn-primary:hover {
@@ -159,13 +159,13 @@ footer {
 }
 
 footer a {
-    color: #253523;
+    color: #2a7d1a;
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
 footer a:hover {
-    color: #253523;
+    color: #2a7d1a;
     text-decoration: underline;
 }
 
@@ -176,15 +176,15 @@ footer p {
 
 /* BUTTONS */
 .btn-primary {
-    background-color: #253523;
-    border-color: #253523;
+    background-color: #2a7d1a;
+    border-color: #2a7d1a;
     color: white;
     font-weight: 600;
 }
 
 .btn-primary:hover {
-    background-color: #25352370;
-    border-color: #253523;
+    background-color: #2a7d1a70;
+    border-color: #2a7d1a;
 }
 
 /* RESPONSIVE */
@@ -292,7 +292,7 @@ footer p {
 
 /* PRICING TEXT COLOR */
 .text-success {
-    color: #253523 !important;
+    color: #2a7d1a !important;
 }
 
 /* GOOGLE FORMS CONTAINER */
