@@ -60,18 +60,19 @@ body {
 
 /* HERO SECTION */
 .hero-section {
-    background: linear-gradient(135deg, #243522 0%, #ffffff 100%);
+    background: linear-gradient(135deg, #0d5005 0%, #ffffff 100%);
     padding: 40px 20px;
     min-height: 600px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .hero-logo {
     max-width: 400px;
     height: auto;
+    margin-top: -40px; /* Pulls the logo up */
 }
 
 .hero-catchphrase {
@@ -108,8 +109,8 @@ body {
 }
 
 .btn-register {
-    background-color: #2a7d1a !important;
-    border-color: #2a7d1a !important;
+    background-color: #243522 !important;
+    border-color: #243522 !important;
     padding: 18px 50px !important;
     font-size: 1.3rem !important;
 }
