@@ -44,57 +44,97 @@
     </div>
 </section>
 
-<!-- COMING SOON SECTION -->
-<section>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 offset-lg-3 text-center">
-                <div class="mb-5">
-                    <i class="bi bi-sun" style="font-size: 4rem; color: #253523; opacity: 0.5;"></i>
+<!-- HORIZONTAL SCROLL CONTAINER -->
+<div class="lessons-scroll-container">
+    <!-- SECTION 1: CAMPS -->
+    <section class="lessons-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="mb-5">
+                        <p class="fs-5 text-success fw-bold mb-4">All Camps are $50</p>
+                    </div>
+
+                    <div class="mb-5">
+                        <h4 class="fw-bold mb-3">All-Levels Camps</h4>
+                        <p class="text-dark mb-1"><strong>Saturday, June 13</strong> (9:00am–11:00am) — Ages 5–9</p>
+                        <p class="text-dark"><strong>Saturday, June 27</strong> (9:00am–11:00am) — Ages 10–16</p>
+                    </div>
+
+                    <div class="mb-5">
+                        <h4 class="fw-bold mb-3">Beginner Camps</h4>
+                        <p class="text-dark mb-1"><strong>Saturday, June 20</strong> (9:00am–11:00am)</p>
+                        <p class="text-dark"><strong>Saturday, July 11</strong> (9:00am–11:00am)</p>
+                    </div>
+
+                    <div class="mb-5">
+                        <h4 class="fw-bold mb-3">Serve Camps</h4>
+                        <p class="text-dark mb-1"><strong>Saturday, July 11</strong> (11:00am–1:00pm)</p>
+                        <p class="text-dark"><strong>Saturday, July 25</strong> (9:00am–11:00am)</p>
+                    </div>
+
+                    <div class="mb-5">
+                        <h4 class="fw-bold mb-3">Girls Tryout Prep</h4>
+                        <p class="text-dark mb-1"><strong>Saturday, July 25</strong> (11:00am–1:00pm)</p>
+                        <p class="text-dark"><strong>Saturday, August 1</strong> (9:00am–11:00am)</p>
+                    </div>
+
+                    <div class="mb-5">
+                        <h4 class="fw-bold mb-3">Doubles Skills Camp</h4>
+                        <p class="text-dark">Dates coming soon.</p>
+                    </div>
+
+                    <div class="mb-5">
+                        <h4 class="fw-bold mb-3">Location</h4>
+                        <p class="text-dark"><strong>Mount Logan Middle School</strong><br>
+                            875 N 200 E<br>
+                            Logan, UT 84321</p>
+                    </div>
                 </div>
-                <h3 class="fw-bold mb-4">Coming Soon</h3>
-                <p class="text-dark fs-5 mb-5">
-                    We're planning incredible summer and seasonal tennis camps. More information coming soon!
-                </p>
-                <p class="text-dark mb-5">
-                    Have questions? <a href="mailto:ellistennisco@gmail.com" class="text-decoration-none text-dark">Get in touch with us</a>.
-                </p>
-                <a href="#"
-                   id="stripe-camps-btn"
-                   class="btn btn-primary mb-5"
-                   onclick="if(!this.href.includes('buy.stripe.com')) { alert('Payment button is not yet configured. Please add your Stripe Payment Link URL.'); return false; }">
-                    <i class="bi bi-credit-card"></i> Register & Pay
-                </a>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- SCHEDULE / CALENDAR SECTION -->
-<section class="bg-light">
-    <div class="container">
-        <h3 class="text-center mb-5">Schedule</h3>
-        <div class="row">
-            <div class="col-lg-8 offset-lg-2">
-                <iframe src="https://calendar.google.com/calendar/embed?src=869e3271e698b3222965b2116018f6c252b64bd3d5e64baa85e55b11c1380d71%40group.calendar.google.com&ctz=America%2FDenver" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no" class="rounded"></iframe>
+    <!-- SECTION 2: REGISTER -->
+    <section class="lessons-section">
+        <div class="container">
+            <h2 class="text-center mb-5">Register</h2>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="google-forms-container bg-light p-5 rounded text-center mb-5">
+                        <div class="mb-4">
+                            <!-- Replace the src below with your Camps Google Form embed URL -->
+                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdbk93GWxkuR6SJu93alY3uhcNPCd8VUnvwsMXELJgSs1weFw/viewform?embedded=true" width="640" height="1393" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+                         </div>
+                    <div class="text-center">
+                        <a href="#"
+                           id="stripe-camps-btn"
+                           class="btn btn-primary btn-lg"
+                           onclick="if(!this.href.includes('buy.stripe.com')) { alert('Payment button is not yet configured. Please add your Stripe Payment Link URL.'); return false; }">
+                            <i class="bi bi-credit-card"></i> Pay Now
+                        </a>
+                        <p class="small text-muted mt-3">
+                            Payments are processed securely through Stripe
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- FOOTER -->
-<footer class="bg-light text-dark py-5 text-center border-top">
-    <div class="container">
-        <p class="mb-2">
-            <strong>Mount Logan Middle School</strong><br>
-            875 N 200 E, Logan, UT 84321
-        </p>
-        <p class="mb-0">
-            <a href="mailto:ellistennisco@gmail.com" class="text-decoration-none text-dark">ellistennisco@gmail.com</a> ·
-            <a href="tel:+13853647157" class="text-decoration-none text-dark">(385) 364-7157</a>
-        </p>
-    </div>
-</footer>
+    <!-- FOOTER -->
+    <footer class="bg-light text-dark py-5 text-center border-top">
+        <div class="container">
+            <p class="mb-2">
+                <strong>Mount Logan Middle School</strong><br>
+                875 N 200 E, Logan, UT 84321
+            </p>
+            <p class="mb-0">
+                <a href="mailto:ellistennisco@gmail.com" class="text-decoration-none text-dark">ellistennisco@gmail.com</a> ·
+                <a href="tel:+13853647157" class="text-decoration-none text-dark">(385) 364-7157</a>
+            </p>
+        </div>
+    </footer>
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
