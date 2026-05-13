@@ -98,17 +98,16 @@
                 <div class="col-lg-8 offset-lg-2">
                     <div class="google-forms-container bg-light p-5 rounded text-center mb-5">
                         <div class="mb-4">
+<<<<<<< HEAD
                             <!-- Replace the src below with your Camps Google Form embed URL -->
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSde5o7xkLf4brV_5maUI4ILv9xwoF8kIoVDKEeAcs4ldvTA2w/viewform?embedded=true" width="640" height="1363" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>                         </div>
+=======
+                            <iframe id="campForm" src="https://docs.google.com/forms/d/e/1FAIpQLSdbk93GWxkuR6SJu93alY3uhcNPCd8VUnvwsMXELJgSs1weFw/viewform?embedded=true" width="640" height="1393" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+                         </div>
+>>>>>>> e361e43 (stripe payment rerouting)
                     <div class="text-center">
-                        <a href="#"
-                           id="stripe-camps-btn"
-                           class="btn btn-primary btn-lg"
-                           onclick="if(!this.href.includes('buy.stripe.com')) { alert('Payment button is not yet configured. Please add your Stripe Payment Link URL.'); return false; }">
-                            <i class="bi bi-credit-card"></i> Pay Now
-                        </a>
                         <p class="small text-muted mt-3">
-                            Payments are processed securely through Stripe
+                            After submitting the form, you'll be redirected to secure payment via Stripe.
                         </p>
                     </div>
                 </div>
@@ -134,6 +133,18 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Custom JS -->
 <script src="js/main.js"></script>
+
+<script>
+  (function () {
+    const iframe = document.getElementById('campForm');
+    const stripeUrl = 'https://buy.stripe.com/7sYfZacYo5qo7AleUMgMw03';
+    let loadCount = 0;
+    iframe.addEventListener('load', function () {
+      loadCount++;
+      if (loadCount > 1) window.location.href = stripeUrl;
+    });
+  })();
+</script>
 
 </body>
 </html>
